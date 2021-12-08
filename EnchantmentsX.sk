@@ -1,0 +1,23 @@
+on block break:
+	if lore of player's tool contains "&7Boom":
+		set {x.cord} to block's x-coordinate
+		set {y.cord} to block's y-coordinate
+		set {z.cord} to block's z-coordinate
+		add 1 to {x.cord}
+		break block at location at {x.cord}, {y.cord}, {z.cord} in world "world"
+		remove 2 from {x.cord}
+		break block at location at {x.cord}, {y.cord}, {z.cord} in world "world"
+		add 1 to {y.cord}
+		break block at location at {x.cord}, {y.cord}, {z.cord} in world "world"
+		remove 2 from {y.cord}
+		break block at location at {x.cord}, {y.cord}, {z.cord} in world "world"
+		add 2 to {x.cord}
+		break block at location at {x.cord}, {y.cord}, {z.cord} in world "world"
+		add 2 to {y.cord}	
+		break block at location at {x.cord}, {y.cord}, {z.cord} in world "world"	
+		remove 1 from {x.cord}
+		break block at location at {x.cord}, {y.cord}, {z.cord} in world "world"
+		remove 1 from {y.cord}
+		break block at location at {x.cord}, {y.cord}, {z.cord} in world "world"
+		remove 1 from {y.cord}
+		break block at location at {x.cord}, {y.cord}, {z.cord} in world "world"
